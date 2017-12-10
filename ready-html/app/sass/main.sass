@@ -21,14 +21,14 @@
 		bottom: 0
 		background-color: $dark
 		opacity: .70
-	
+
 .header-content
 	z-index: 1
 	color: #ffffff
 	text-align: center
 	padding: 60px $gutter
 	.like-h1
-		font-size: 60px
+		font-size: 3.7em
 		font-family: RuslanDisplay-alfa, Caveat-Regular-alfa, Caveat-Bold-alfa, Lobster-Regular-alfa, MarckScript-Regular-alfa, Pacifico-Regular-alfa, intro-alfa, sans-serif
 		font-weight: normal
 		margin: 20px 0
@@ -98,9 +98,19 @@
 		font-family: Roboto-italic-alfa, sans-serif
 		padding: 2em
 		font-size: 1.3em
+// END about-section
+
+// START infograf-section
+.infograf-section
+ padding: 10px
+ grid-template-columns: repeat(4, 1fr)
+ grid-gap: 10px
+	img
+		width: 50%
+.infograf-item
+	min-height: 32vh
+// END infograf-section
 
 
-.like-h1
-	font-size: 2em
 	
 @import "media" // Всегда в конце
