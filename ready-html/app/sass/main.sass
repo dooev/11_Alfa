@@ -77,6 +77,19 @@
 		background-color: darken($accent, 5%)
 		&::after
 			opacity: .32
+	&.button-gray
+		background-color: $gray 
+		&::after
+			background-color: darken($gray, 15%) 
+		&:hover
+			background-color: lighten($gray, 5%) 
+			&::after
+				opacity: .22 
+		&:active
+			background-color: darken($gray, 5%) 
+			&::after
+				opacity: .32 
+
 
 .like-h1
 	font-size: 2em
