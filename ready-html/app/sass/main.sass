@@ -3,6 +3,12 @@
 @import "base"
 @import "vars"
 
+body 
+	margin: 6em 10em
+	background-image: url(../img/bg7.png)
+	background-attachment: fixed
+	background-size: cover
+	background-position: center 
 .grid
 	display: grid
 
@@ -92,12 +98,19 @@
 
 // START about-section
 .about-section
-	background-color: $light
+	grid-template-columns: repeat(2, 50%)
+	.about-item
+		background-size: cover
+		background-position: center 
+		position: relative
+		
 	p
 		margin: 0
 		font-family: Roboto-italic-alfa, sans-serif
 		padding: 2em
 		font-size: 1.3em
+		background: $light
+
 // END about-section
 
 // START infograf-section
@@ -106,7 +119,7 @@
  grid-template-columns: repeat(4, 1fr)
  grid-gap: 10px
 	img
-		width: 50%
+		width: 25%
 
 .infograf-item
 	min-height: 32vh
@@ -117,7 +130,7 @@
 	padding: $gutter
 	font-size: 1.2em
 	font-weight: bold
-	color: white
+	color: #333333
 	position: relative
 	transition: color .5s ease
 	cursor: pointer
@@ -132,7 +145,7 @@
 		left: 0
 		right: 0
 		bottom: 0
-		background-color: $dark
+		background-color: $light
 		opacity: .60
 		transition: opacity .5s ease
 	> *
