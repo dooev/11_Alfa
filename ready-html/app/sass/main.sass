@@ -4,7 +4,7 @@
 @import "vars"
 
 body 
-	margin: 5vh 10em
+	margin: 7vh
 	background-image: url(../img/bg7.png)
 	background-attachment: fixed
 	background-size: cover
@@ -12,9 +12,16 @@ body
 	grid-gap: 2em
 .grid
 	display: grid
-
+.tel
+	float: right
+	color: white
+.logo
+	float: 
+	color: white
+	
 .main-header
-	height: 95vh
+	margin: -2vh -7vh 0 -7vh 
+	height: 100vh
 	background-size: cover
 	background-position: center 
 	position: relative
@@ -100,6 +107,7 @@ body
 // START about-section
 .about-section
 	grid-template-columns: repeat(2, 50%)
+	margin: 5em 0
 	.about-item
 		background-size: cover
 		background-position: center 
@@ -117,7 +125,7 @@ body
 	p
 		margin: 0
 		font-family: Roboto-italic-alfa, sans-serif
-		padding: 2em
+		padding: 3em
 		font-size: 1.3em
 		color: $light
 
@@ -145,7 +153,6 @@ body
 	transition: color .5s ease
 	cursor: pointer
 	&:hover
-		color: $accent
 		&::before
 			opacity: .04
 			
@@ -184,10 +191,10 @@ body
 			right: 0
 			bottom: 0
 			background-color: $dark
-			opacity: .5
+			opacity: .35
 		&:hover
 			&::before
-				opacity: .2
+				opacity: .15
 	&:nth-child(6)
 		grid-column: 2/4
 		&::before
@@ -198,10 +205,10 @@ body
 			right: 0
 			bottom: 0
 			background-color: $dark
-			opacity: .5
+			opacity: .35
 		&:hover
 			&::before
-				opacity: .2
+				opacity: .15
 	&:nth-child(7)
 		grid-column: 4
 		grid-row: 3/5
@@ -213,15 +220,15 @@ body
 			right: 0
 			bottom: 0
 			background-color: $dark
-			opacity: .5
+			opacity: .35
 		&:hover
 			&::before
-				opacity: .2
+				opacity: .15
 
 .infograf-button
 	grid-column: 1/5
-	min-height: 9vh
-	margin: -10 0
+	min-height: 6vh
+	padding: 0px
 	text-decoration: none
 	font-size: 13px
 	text-transform: uppercase
@@ -233,6 +240,7 @@ body
 	outline: none
 	transition: background-color .1s ease
 	cursor: pointer
+	opas
 	&:focus, &:hover
 		text-decoration: none
 		color: #fff
