@@ -218,6 +218,34 @@ body
 			&::before
 				opacity: .2
 
+.infograf-button
+	grid-column: 1/5
+	min-height: 9vh
+	margin: -10 0
+	text-decoration: none
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+	&::before
+	background-color: $accent
 // END infograf-section
 
 
