@@ -127,11 +127,41 @@
 				<input type="text" name="name" id="" placeholder="Иван Иваныч">
 			</li>
 			<li>
-					<label for="email"></label>
-					<input type="text" name="email" id="" >
-					<span class="form-hint">Правильный формат email</span>
+					<div class="like-h3">Ваши контакты</div>					
+					<label for="email">Почта:</label>
+					<input type="email" name="email" id="" placeholder="ivan@mail.ru" >
+					<label for="tel">Телефон:</label>
+					<input type="tel" name="tel" id="" placeholder="+7963-000-00-00" >
+					
 				</li>
-
+				<li>
+						<div class="like-h3">Выбор услуги</div>											
+						
+						<div class="radio">
+							<label> 
+								<input type="radio" value="type" name="type"><br>
+								занятия у нас в студии
+							</label>
+							<label>
+									<input type="radio" value="type" name="type"><br>
+									установка у вас дома
+								</label>
+								<label>
+										<input type="radio" value="type" name="type"><br>
+										занятие на дому со специалистом
+									</label>
+						</div>
+					</li>
+					<li>
+							<label for="date">Выберете желаемую дату</label>						
+						<input type="date" name="date" id=""></li>
+					<li>
+							<label for="comment">Комментарий:</label>
+							<textarea name="comment" cols="40" rows="6" placeholder="Здравствуйте. Хотелось бы зависнуть 01.01.2018 Нас 25 человек. Желательное время 15:00. Ждем обратной связи."></textarea>
+						</li>
+							<li>
+								<button type="submit">Отправить</button>
+							</li>
 		</ul>
 	</form>
 </section>
